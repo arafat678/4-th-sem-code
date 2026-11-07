@@ -16,7 +16,7 @@
 
 ---
 
-## 📌 Abstract & Research Background
+## Abstract & Research Background
 
 This repository contains the official codebase and experimental findings for the **M.Tech 4th Semester Thesis Research Project** on automated post-harvest fruit quality evaluation, physical morphological trait extraction, and multi-class defect grading using computer vision and deep learning.
 
@@ -24,7 +24,7 @@ Manual agricultural grading in commercial sorting sheds is labor-intensive, subj
 
 ---
 
-## 🔬 Key Research Findings & Visual Gallery
+##  Key Research Findings & Visual Gallery
 
 ### 1. Physical Trait & Morphology Extraction
 The system isolates individual fruit contours, fits approximating convex hulls, and computes equatorial width, polar height, bounding box dimensions, and surface solidity metrics in real time.
@@ -55,7 +55,7 @@ High-resolution defect contour tracking maps surface blemishes, scabs, and bruis
 
 ---
 
-## 📊 Empirical Performance Benchmark
+## Empirical Performance Benchmark
 
 Comprehensive empirical comparison between five machine learning and deep learning architectures evaluated on the same benchmark test set:
 
@@ -69,7 +69,7 @@ Comprehensive empirical comparison between five machine learning and deep learni
 
 ---
 
-## 🧠 System Architecture & Methodology Flow
+## System Architecture & Methodology Flow
 
 ```mermaid
 flowchart TD
@@ -110,7 +110,7 @@ flowchart TD
 
 ---
 
-## 📐 Mathematical Formulation
+##  Mathematical Formulation
 
 ### 1. External Contour and Convex Hull Approximation
 Given an extracted discrete contour boundary $C = \{p_1, p_2, \dots, p_N\}$, polygon approximation is evaluated with epsilon threshold $\epsilon$:
@@ -129,7 +129,7 @@ $$\mathcal{L}_{\text{CE}}(\Theta) = -\frac{1}{N} \sum_{i=1}^{N} \sum_{c=1}^{C} y
 
 ---
 
-## 📂 Repository File Structure
+##  Repository File Structure
 
 ```text
 4-th-sem-code/
@@ -169,7 +169,7 @@ $$\mathcal{L}_{\text{CE}}(\Theta) = -\frac{1}{N} \sum_{i=1}^{N} \sum_{c=1}^{C} y
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Installation
 Clone the repository and install the dependencies:
@@ -196,7 +196,7 @@ python main.py --task color_tune --image figures/output_image-1.jpg
 
 ---
 
-## 📖 Citation
+## Citation
 
 If this research, pipeline, or dataset analysis assists your work, please cite it as:
 
