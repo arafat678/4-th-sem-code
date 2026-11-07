@@ -17,13 +17,13 @@
 
 ---
 
-> ### 📢 Official IEEE Publication
+> ###  IEEE Publication
 > This research is published in the **Proceedings of the 2025 7th International Symposium on Advanced Electrical and Communication Technologies (ISAECT)**, technically co-sponsored by IEEE:
 >
-> 📄 **Citation:**  
+>  **Citation:**  
 > **A. A. Mondal**, **N. Bhattacharyya** and **S. Ghosh**, *"Advanced Apple Sorting and Quality Grading Application Using Graph Neural Networks, Vision Transformers, and Convolutional Neural Networks,"* **2025 7th International Symposium on Advanced Electrical and Communication Technologies (ISAECT)**, Mohali, Punjab, India, 2025, pp. 1-8.  
-> 🔗 **IEEE Xplore / DOI:** [`10.1109/ISAECT68904.2025.11318674`](https://doi.org/10.1109/ISAECT68904.2025.11318674)  
-> 🏷️ **Keywords:** *Computer vision; Accuracy; Feature extraction; Transformers; Graph neural networks; Agriculture; Stability analysis; Surface texture; Convolutional neural networks; Sorting; Advanced Apple Sorting and Quality Grading; ML and DL; AI in agriculture; Classification.*
+>  **IEEE Xplore / DOI:** [`10.1109/ISAECT68904.2025.11318674`](https://doi.org/10.1109/ISAECT68904.2025.11318674)  
+> **Keywords:** *Computer vision; Accuracy; Feature extraction; Transformers; Graph neural networks; Agriculture; Stability analysis; Surface texture; Convolutional neural networks; Sorting; Advanced Apple Sorting and Quality Grading; ML and DL; AI in agriculture; Classification.*
 
 ---
 
@@ -42,11 +42,11 @@ Manual agricultural grading in industrial packaging houses is subjective, labor-
 
 | Performance Dimension | Empirical Value | Significance / Industrial Benchmark |
 |:---|:---:|:---|
-| 🎯 **Top-1 Classification Accuracy** | **98.7%** | Fine-tuned ResNet-50 on multi-variety apple dataset |
-| ⚡ **Real-Time Edge Throughput** | **243.9 FPS** | Custom 3-stage ConvNet running at **$4.1\text{ ms}$** per frame |
-| 📏 **Trait Extraction Accuracy** | **$r = 0.994$** | Pearson correlation with physical digital caliper measurements |
-| 🔍 **Surface Defect Sensitivity** | **99.4%** | Sub-millimeter detection of bruises, blemishes, scabs, and punctures |
-| 🏆 **Official Publication** | **IEEE ISAECT 2025** | Published with IEEE Xplore indexing (DOI: 10.1109/ISAECT68904.2025.11318674) |
+| **Top-1 Classification Accuracy** | **98.7%** | Fine-tuned ResNet-50 on multi-variety apple dataset |
+| **Real-Time Edge Throughput** | **243.9 FPS** | Custom 3-stage ConvNet running at **$4.1\text{ ms}$** per frame |
+| **Trait Extraction Accuracy** | **$r = 0.994$** | Pearson correlation with physical digital caliper measurements |
+| **Surface Defect Sensitivity** | **99.4%** | Sub-millimeter detection of bruises, blemishes, scabs, and punctures |
+| **Official Publication** | **IEEE ISAECT 2025** | Published with IEEE Xplore indexing (DOI: 10.1109/ISAECT68904.2025.11318674) |
 
 ---
 
