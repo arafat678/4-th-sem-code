@@ -1,30 +1,56 @@
-# Computer Vision & Deep Learning Framework for Fruit Quality Grading and Physical Trait Extraction
+# Advanced Apple Sorting and Quality Grading: Computer Vision & Deep Learning Framework
 
 <p align="center">
   <img src="figures/01_contour_dimensioning_results.png" alt="Contour Dimensioning and Trait Extraction" width="850">
 </p>
 
 <p align="center">
-  <a href="https://github.com/arafat678/4-th-sem-code/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+  <a href="https://doi.org/10.1109/ISAECT68904.2025.11318674"><img src="https://img.shields.io/badge/IEEE%20Xplore-Published%20Paper-00629B?logo=ieee&logoColor=white" alt="IEEE Xplore"></a>
+  <a href="https://doi.org/10.1109/ISAECT68904.2025.11318674"><img src="https://img.shields.io/badge/DOI-10.1109%2FISAECT68904.2025.11318674-blue.svg" alt="DOI: 10.1109/ISAECT68904.2025.11318674"></a>
+  <a href="https://doi.org/10.1109/ISAECT68904.2025.11318674"><img src="https://img.shields.io/badge/Conference-IEEE%20ISAECT%202025-brightgreen" alt="IEEE ISAECT 2025"></a>
+  <a href="https://github.com/arafat678/4-th-sem-code/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python" alt="Python 3.8+">
   <img src="https://img.shields.io/badge/PyTorch-2.0%2B-orange?logo=pytorch" alt="PyTorch">
   <img src="https://img.shields.io/badge/OpenCV-4.5%2B-green?logo=opencv" alt="OpenCV">
   <img src="https://img.shields.io/badge/scikit--learn-1.0%2B-F7931E?logo=scikit-learn" alt="scikit-learn">
-  <img src="https://img.shields.io/badge/FastAI-2.5%2B-blueviolet" alt="FastAI">
-  <img src="https://img.shields.io/badge/Thesis-M.Tech%204th%20Sem-success" alt="M.Tech 4th Sem">
 </p>
 
 ---
 
-## Abstract & Research Background
-
-This repository contains the official codebase and experimental findings for the **M.Tech 4th Semester Thesis Research Project** on automated post-harvest fruit quality evaluation, physical morphological trait extraction, and multi-class defect grading using computer vision and deep learning.
-
-Manual agricultural grading in commercial sorting sheds is labor-intensive, subjective, and prone to high error margins. This research implements an end-to-end cyber-physical inspection pipeline that integrates **classical morphological computer vision** (calibrated contour tracking, convex hull computation, bounding-box aspect ratio extraction, HSV color thresholding) with **modern deep convolutional neural networks** (custom 3-stage ConvNet and transfer-learned ResNet-50 / ResNet-34 architectures). The pipeline achieves **98.7% classification accuracy** across multi-tier commercial quality grades (Premium, Grade A, Grade B, Reject) while maintaining real-time processing throughput exceeding **70 FPS**.
+> ### 📢 Official IEEE Publication
+> This research is published in the **Proceedings of the 2025 7th International Symposium on Advanced Electrical and Communication Technologies (ISAECT)**, technically co-sponsored by IEEE:
+>
+> 📄 **Citation:**  
+> **A. A. Mondal**, **N. Bhattacharyya** and **S. Ghosh**, *"Advanced Apple Sorting and Quality Grading Application Using Graph Neural Networks, Vision Transformers, and Convolutional Neural Networks,"* **2025 7th International Symposium on Advanced Electrical and Communication Technologies (ISAECT)**, Mohali, Punjab, India, 2025, pp. 1-8.  
+> 🔗 **IEEE Xplore / DOI:** [`10.1109/ISAECT68904.2025.11318674`](https://doi.org/10.1109/ISAECT68904.2025.11318674)  
+> 🏷️ **Keywords:** *Computer vision; Accuracy; Feature extraction; Transformers; Graph neural networks; Agriculture; Stability analysis; Surface texture; Convolutional neural networks; Sorting; Advanced Apple Sorting and Quality Grading; ML and DL; AI in agriculture; Classification.*
 
 ---
 
-##  Key Research Findings & Visual Gallery
+## Abstract & Research Overview
+
+This repository hosts the official experimental codebase, mathematical algorithms, and empirical benchmark results for the published research on automated post-harvest fruit quality evaluation, physical trait extraction, and multi-class commercial grading using computer vision and deep learning.
+
+Manual agricultural grading in industrial packaging houses is subjective, labor-intensive, and error-prone. This research implements a cyber-physical inspection framework integrating:
+1. **Classical Morphological Computer Vision:** Calibrated contour tracking, convex hull approximation, equatorial width and polar height dimensioning, aspect ratio calculation ($AR = W/H$), and HSV color-space thresholding.
+2. **Deep Learning Classification:** Custom 3-stage ConvNets, transfer-learned ResNet-50 / ResNet-34 backbones, and Support Vector Machines (SVM).
+3. **High-Speed Real-Time Operation:** Delivers **98.7% classification accuracy** across 4 commercial quality tiers (*Premium*, *Grade A*, *Grade B*, *Reject*) with throughput surpassing **70 FPS**.
+
+---
+
+## Fast Highlights: At a Glance
+
+| Performance Dimension | Empirical Value | Significance / Industrial Benchmark |
+|:---|:---:|:---|
+| 🎯 **Top-1 Classification Accuracy** | **98.7%** | Fine-tuned ResNet-50 on multi-variety apple dataset |
+| ⚡ **Real-Time Edge Throughput** | **243.9 FPS** | Custom 3-stage ConvNet running at **$4.1\text{ ms}$** per frame |
+| 📏 **Trait Extraction Accuracy** | **$r = 0.994$** | Pearson correlation with physical digital caliper measurements |
+| 🔍 **Surface Defect Sensitivity** | **99.4%** | Sub-millimeter detection of bruises, blemishes, scabs, and punctures |
+| 🏆 **Official Publication** | **IEEE ISAECT 2025** | Published with IEEE Xplore indexing (DOI: 10.1109/ISAECT68904.2025.11318674) |
+
+---
+
+## Experimental Results & Visual Gallery
 
 ### 1. Physical Trait & Morphology Extraction
 The system isolates individual fruit contours, fits approximating convex hulls, and computes equatorial width, polar height, bounding box dimensions, and surface solidity metrics in real time.
@@ -57,7 +83,7 @@ High-resolution defect contour tracking maps surface blemishes, scabs, and bruis
 
 ## Empirical Performance Benchmark
 
-Comprehensive empirical comparison between five machine learning and deep learning architectures evaluated on the same benchmark test set:
+Comprehensive empirical comparison between machine learning and deep learning architectures evaluated on the same benchmark test set:
 
 | Architecture | Model Family | Parameters | Accuracy | Precision | Recall | F1-Score | Latency (ms) | Throughput (FPS) |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -73,7 +99,7 @@ Comprehensive empirical comparison between five machine learning and deep learni
 
 ```mermaid
 flowchart TD
-    A["Raw Input RGB Image / Live Video Feed"] --> B["Image Preprocessing & Median Blur (k=5)"]
+    A["Raw Input RGB Image / Conveyor Video Stream"] --> B["Image Preprocessing & Median Blur (k=5)"]
     B --> C["Binary Inverse Thresholding (T=210)"]
     C --> D["Topological Border Following (Suzuki Contour Algorithm)"]
     
@@ -94,7 +120,7 @@ flowchart TD
     subgraph Classification_Engine["Multi-Class Grading & Classification"]
         A --> M["Spatial Normalization (150x150 / 224x224)"]
         M --> N1["Custom 3-Stage ConvNet (Batch Normalization)"]
-        M --> N2["ResNet-50 / ResNet-34 (FastAI Backbone)"]
+        M --> N2["ResNet-50 / ResNet-34 (Vision Backbone)"]
         M --> N3["SVM with Standard Scaling"]
     end
     
@@ -110,7 +136,7 @@ flowchart TD
 
 ---
 
-##  Mathematical Formulation
+## Mathematical Formulation
 
 ### 1. External Contour and Convex Hull Approximation
 Given an extracted discrete contour boundary $C = \{p_1, p_2, \dots, p_N\}$, polygon approximation is evaluated with epsilon threshold $\epsilon$:
@@ -129,7 +155,7 @@ $$\mathcal{L}_{\text{CE}}(\Theta) = -\frac{1}{N} \sum_{i=1}^{N} \sum_{c=1}^{C} y
 
 ---
 
-##  Repository File Structure
+## Repository File Structure
 
 ```text
 4-th-sem-code/
@@ -162,7 +188,7 @@ $$\mathcal{L}_{\text{CE}}(\Theta) = -\frac{1}{N} \sum_{i=1}^{N} \sum_{c=1}^{C} y
 │   └── BENCHMARK_ANALYSIS.md             # Class-wise ablation studies & latency benchmarks
 ├── main.py                               # Unified command-line interface & pipeline runner
 ├── requirements.txt                      # Python dependencies
-├── CITATION.cff                          # Formal academic citation metadata
+├── CITATION.cff                          # Formal IEEE academic citation metadata
 ├── LICENSE                               # MIT License
 └── README.md                             # Repository documentation
 ```
@@ -172,7 +198,7 @@ $$\mathcal{L}_{\text{CE}}(\Theta) = -\frac{1}{N} \sum_{i=1}^{N} \sum_{c=1}^{C} y
 ## Getting Started
 
 ### 1. Installation
-Clone the repository and install the dependencies:
+Clone the repository and install dependencies:
 ```bash
 git clone https://github.com/arafat678/4-th-sem-code.git
 cd 4-th-sem-code
@@ -198,17 +224,20 @@ python main.py --task color_tune --image figures/output_image-1.jpg
 
 ## Citation
 
-If this research, pipeline, or dataset analysis assists your work, please cite it as:
+Please cite our published IEEE conference paper:
 
 ```bibtex
-@misc{mondal2024fruitqualitygrading,
-  author       = {Arafat Ali Mondal},
-  title        = {Computer Vision and Deep Learning Framework for Fruit Quality Grading and Physical Trait Extraction},
-  year         = {2024},
-  publisher    = {GitHub},
-  journal      = {GitHub Repository},
-  howpublished = {\url{https://github.com/arafat678/4-th-sem-code}},
-  note         = {M.Tech 4th Semester Thesis Research Project, Maulana Abul Kalam Azad University of Technology (MAKAUT)}
+@inproceedings{mondal2025advanced,
+  author    = {Mondal, Arafat Ali and Bhattacharyya, Nabarun and Ghosh, S.},
+  booktitle = {2025 7th International Symposium on Advanced Electrical and Communication Technologies (ISAECT)},
+  title     = {Advanced Apple Sorting and Quality Grading Application Using Graph Neural Networks, Vision Transformers, and Convolutional Neural Networks},
+  year      = {2025},
+  volume    = {},
+  number    = {},
+  pages     = {1-8},
+  keywords  = {Computer vision;Accuracy;Feature extraction;Transformers;Graph neural networks;Agriculture;Stability analysis;Surface texture;Convolutional neural networks;Sorting;Advanced Apple Sorting and Quality Grading;ML and DL;AI in agriculture;Classification},
+  doi       = {10.1109/ISAECT68904.2025.11318674},
+  url       = {https://doi.org/10.1109/ISAECT68904.2025.11318674}
 }
 ```
 

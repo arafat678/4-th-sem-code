@@ -1,20 +1,38 @@
 cff-version: 1.2.0
 message: "If you use this research codebase or software in your work, please cite it as below."
-title: "Computer Vision and Deep Learning Framework for Fruit Quality Grading and Physical Trait Extraction"
+title: "Advanced Apple Sorting and Quality Grading Application Using Graph Neural Networks, Vision Transformers, and Convolutional Neural Networks"
 version: 1.0.0
-date-released: 2024-06-15
+date-released: 2025-01-15
+doi: "10.1109/ISAECT68904.2025.11318674"
 authors:
   - family-names: Mondal
     given-names: Arafat Ali
     affiliation: "Maulana Abul Kalam Azad University of Technology (MAKAUT), West Bengal, India"
+  - family-names: Bhattacharyya
+    given-names: Nabarun
+    affiliation: "Maulana Abul Kalam Azad University of Technology (MAKAUT), West Bengal, India"
+  - family-names: Ghosh
+    given-names: S.
+    affiliation: "Maulana Abul Kalam Azad University of Technology (MAKAUT), West Bengal, India"
+conference:
+  name: "2025 7th International Symposium on Advanced Electrical and Communication Technologies (ISAECT)"
+  location: "Mohali, Punjab, India"
+  date-start: 2025-01-01
+  date-end: 2025-01-03
 repository-code: "https://github.com/arafat678/4-th-sem-code"
 keywords:
-  - computer-vision
-  - deep-learning
-  - fruit-quality-grading
-  - physical-trait-extraction
-  - apple-sorting
-  - image-processing
-  - pytorch
-  - opencv
+  - Computer vision
+  - Accuracy
+  - Feature extraction
+  - Transformers
+  - Graph neural networks
+  - Agriculture
+  - Stability analysis
+  - Surface texture
+  - Convolutional neural networks
+  - Sorting
+  - Advanced Apple Sorting and Quality Grading
+  - ML and DL
+  - AI in agriculture
+  - Classification
 license: MIT
