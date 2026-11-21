@@ -8,6 +8,7 @@
   <a href="https://doi.org/10.1109/ISAECT68904.2025.11318674"><img src="https://img.shields.io/badge/IEEE%20Xplore-Published%20Paper-00629B?logo=ieee&logoColor=white" alt="IEEE Xplore"></a>
   <a href="https://doi.org/10.1109/ISAECT68904.2025.11318674"><img src="https://img.shields.io/badge/DOI-10.1109%2FISAECT68904.2025.11318674-blue.svg" alt="DOI: 10.1109/ISAECT68904.2025.11318674"></a>
   <a href="https://doi.org/10.1109/ISAECT68904.2025.11318674"><img src="https://img.shields.io/badge/Conference-IEEE%20ISAECT%202025-brightgreen" alt="IEEE ISAECT 2025"></a>
+  <a href="https://hub.xerj.org/contributors/arafat678"><img src="https://img.shields.io/badge/XERJ%20Corpus-Indexed%20Hub-8A2BE2?logo=git&logoColor=white" alt="XERJ Corpus"></a>
   <a href="https://github.com/arafat678/4-th-sem-code/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python" alt="Python 3.8+">
   <img src="https://img.shields.io/badge/PyTorch-2.0%2B-orange?logo=pytorch" alt="PyTorch">
